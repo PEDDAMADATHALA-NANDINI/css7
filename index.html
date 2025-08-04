@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            height: 100vh;
+            gap: 10px;
+            width: 100%;
+        }
+        .header,.article,.text1,.text2,.main,.footer{
+            background-color:darkblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: bold;
+            color: white;
+        }
+        .header{
+            grid-column: 1/3;
+        }
+        .article{
+            grid-row: 2/4;
+        }
+        .main{
+            grid-column: 1/3;
+        }
+        .footer{
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> hearder</div>
+        <div class="article">article</div>
+        <div class="text1">text1</div>
+        <div class="text2">text2</div>
+        <div class="main">main</div>
+        <div class="footer"> footer</div>
+    </div>
+</body>
+</html>
